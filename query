@@ -1,0 +1,14 @@
+#!/bin/python
+
+# query <xth number> <y digit> prime
+
+import sys
+
+line = int(sys.argv[1]) - 1
+digit = str(sys.argv[2]).zfill(2)
+
+fname = digit + '.txt'
+file = open(fname)
+f = file.readlines()
+print(f[line])
+
